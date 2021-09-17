@@ -7,13 +7,42 @@
     <link rel="stylesheet" href="./style.css">
     <title>dom-to-do-project</title>
 </head>
-<body class="container">
+<body>
+    <section class="container">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
 
-    <div class="logo">
-        <img src="" alt="">
-    </div>
+        <h1 id="header" class="header">To-Do App</h1>
 
-    <h1>To-Do App</h1>
+        <form class="new-task-conatiner box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task">
+            <input type="submit" id="addTask" value="Add Task">
+        </form>
+
+        <div class="todo-list-box">
+            <h2>Incompleted Tasks</h2>
+            <ul id="item">
+                <li class="item">
+                    <input type="checkbox"> <label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox"> <label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox"> <label>Task Name</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="complete-list-box">
+            <h2>Completed Tasks</h2>
+            <ul>
+                <li class="item">Task Name <button class="delete">Delete</button></li>
+            </ul>
+        </div>
+    </section>
 
  <script src="./script.js"></script>   
 </body>
