@@ -16,7 +16,6 @@ let createTask = function (task) {
     listItem.appendChild(label);
 
     return listItem;
-
 }
 
 
@@ -27,7 +26,18 @@ let addTask = function (event) {
     newTask.value = "";
 
     bindCompleteItems(listItem, completeTask);
+}
 
+let completeTask = function() {
+    let listItem = this.parentNode;
+    let deleteButton = document.createElement('button');
+    deleteButton.innerText = 'Delete';
+    deleteButton.className = 'delete';
+    listItem.appendChild(deleteButton);
+
+    let checkBox = listItem.querySelector('input[type="checkbox"]');
+    checkBox.remove();
+    completeUl.appendChild(listItem);
 }
 
 let bindCompleteItems = function(taskItem, checkboxClick) {
