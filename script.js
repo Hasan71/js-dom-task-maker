@@ -1,6 +1,6 @@
 let newTask = document.querySelector('#new-task');
 let form = document.querySelector('form');
-let todoUl = document.querySelector('#items');
+let todoUl = document.querySelector('#item');
 let completeUl = document.querySelector('.complete-list ul');
 
 
