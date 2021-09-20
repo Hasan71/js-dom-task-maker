@@ -18,3 +18,19 @@ let createTask = function (task) {
     return listItem;
 
 }
+
+
+let addTask = function (event) {
+    event.preventDefault();
+    let listItem = createTask(newTask.value);
+    todoUl.appendChild(listItem);
+    newTask.value = "";
+
+    bindCompleteItems(listItem, completeTask);
+
+}
+
+let bindCompleteItems = function(taskItem, checkboxClick) {
+    let checkBox = taskItem.querySelector('input[type="checkbox"]');
+    checkBox.onchange = checkboxClick;
+}
