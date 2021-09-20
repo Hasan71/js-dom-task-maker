@@ -56,3 +56,15 @@ let bindCompleteItems = function(taskItem, deleteButtonClick) {
     let deleteButton = taskItem.querySelector('.delete');
     deleteButton.onclick = deleteButtonClick;
 }
+
+for (let i=0; i<todoUl.children.length; i++){
+    bindInCompleteItems(todoUl.children[i], completeTask);
+}
+
+for (let i=0; i<completeUl.children.length; i++){
+    bindCompleteItems(completeUl.children[i], deleteTask);
+}
+
+
+
+form.addEventListener('submit', addTask);
