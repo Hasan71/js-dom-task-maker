@@ -69,13 +69,13 @@ li {
     border-bottom: 1 px dotted #ccc;
 }
 
-.update {
+/* .update {
     float: right;
     background-color: blue;
     color: white;
     border: 0;
     padding: 3px 5px;
-}
+} */
 
 .delete {
     float: right;
