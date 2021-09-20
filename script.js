@@ -8,7 +8,7 @@ let createTask = function (task) {
     let listItem = document.createElement('li');
     let checkBox = document.createElement('input');
     let label = document.createElement('label');
-
+    //label.className = 'update';
     label.innerText = task;
     checkBox.type = 'checkbox';
 
