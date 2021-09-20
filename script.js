@@ -38,9 +38,16 @@ let completeTask = function() {
     let checkBox = listItem.querySelector('input[type="checkbox"]');
     checkBox.remove();
     completeUl.appendChild(listItem);
+    bindCompleteItems(listItem, deleteTask);
 }
 
-let bindCompleteItems = function(taskItem, checkboxClick) {
+let deleteTask = function() {
+    let listItem = this.parentNode;
+    let ul = listItem.parentNode;
+    ul.removeChild(listItem);
+}
+
+let bindInCompleteItems = function(taskItem, checkboxClick) {
     let checkBox = taskItem.querySelector('input[type="checkbox"]');
     checkBox.onchange = checkboxClick;
 }
