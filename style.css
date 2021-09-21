@@ -3,13 +3,13 @@
 }
 
 .container {
-    background: rgb(190, 249, 250);
+    background: rgb(153, 184, 219);
     padding: 25px;
     max-width: 750px;
     margin: 25px auto;
     overflow: hidden;
     border-radius: 10px;
-    border: 3px solid #313533;
+    border: 3px solid #fa9595;
 }
 
 h1,
@@ -19,12 +19,16 @@ h2 {
     text-transform: uppercase;
 }
 
+.header {
+    color: #5d0070;
+}
+
 h2 {
     font-size: 20px;
     text-align: center;
     border-bottom: 1px solid #313533;
     padding: 0 0 10px;
-    color: #048839;
+    color: #887004;
 }
 
 .logo {
@@ -40,9 +44,20 @@ h2 {
     text-align: center;
 }
 
+#addTask {
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 5px;
+}
+
+#addTask:hover {
+    cursor: pointer;
+}
+
 .box {
     padding: 10px 50px;
-    border: 2px solid #048839;
+    border: 2px solid #a88eca;
     border-radius: 5px;
     background: #fff;
     margin: 15px 0;
@@ -66,7 +81,7 @@ ul {
 
 li {
     padding: 10px;
-    border-bottom: 1 px dotted #ccc;
+    border-bottom: 1 px dotted rgb(168, 120, 120);
 }
 
 /* .update {
@@ -83,4 +98,8 @@ li {
     color: white;
     border: 0;
     padding: 3px 5px;
+}
+
+.delete:hover {
+    cursor: pointer;
 }
